@@ -1,21 +1,12 @@
-import React from 'react';
-import Navbar from './komponenter/navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import AgeCalculator from "./AgeCalculator"; 
 
 function App() {
-  return (
-    <>
-      <Router>
-        <Navbar /> {/* Corrected Navbar component */}
-        <Routes>
-          <Route path='/' element={<h1>Hem</h1>} />
-        </Routes>
-      </Router>
-    </>
-  );
+    return (
+        <div>
+            <h1>Välkommen till Springkalkylatorn</h1>
+            <AgeCalculator />
+        </div>
+    );
 }
 
 export default App;
-
-
